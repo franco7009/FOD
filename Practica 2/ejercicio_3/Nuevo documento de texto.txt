@@ -1,0 +1,34 @@
+Codigo: 123
+Nombre: Felpita
+Descripcion: Papel
+Disponibles: 30
+Minimo: 20
+Precio: 123.00
+
+Codigo: 150
+Nombre: Sussex
+Descripcion: Papel
+Disponibles: 23
+Minimo: 20
+Precio: 100.00
+
+Codigo: 170
+Nombre: Tang
+Descripcion: Jugo
+Disponibles: 100
+Minimo: 50
+Precio: 20.00
+
+Codigo: 200
+Nombre: Rexona
+Descripcion: Talco
+Disponibles: 20
+Minimo: 25
+Precio: 200.00
+
+Codigo: 220
+Nombre: Blem
+Descripcion: Aerosol
+Disponibles: 40
+Minimo: 35
+Precio: 400.00

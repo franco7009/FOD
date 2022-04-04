@@ -1,0 +1,24 @@
+
+Codigo: 21
+Monto: 32.00
+Nombre: Franco
+
+Codigo: 33
+Monto: 40.00
+Nombre: Miqueas
+
+Codigo: 33
+Monto: 30.00
+Nombre: Miqueas
+
+Codigo: 55
+Monto: 40.00
+Nombre: Macarena
+
+Codigo: 70
+Monto: 20.00
+Nombre: Nacho
+
+Codigo: 70
+Monto: 10.00
+Nombre: Nacho
