@@ -53,21 +53,52 @@ type
 		DNI_padre: integer;
 	end;
 	
-	fallecido = record
-		partida: integer;
-		fallecido: persona;
+	regFallecidoMaestro = record
 		medico: integer;
 		fecha: str10;
 		hora: str5;
 		lugar: str10;
 	end;
+
+	fallecido = record
+		partida: integer;
+		fallecido: persona;
+		datosFallecido: regFallcidoMaestro;		
+	end;
 	
 	regMaestro = record;
-		nac: nacimiento;
+		infoNacimiento: nacimiento;
 		fallecio: boolean;
-		
+		infoFallecido: regFallcidoMaestro;
+	end;		
 	
 	
 	archFallecidos = file of fallecido;
 	archNacimientos = file of nacimiento;
+	archMaestro = file of regMaestro;
+
+	vectorNacimientos = array 1 to delegaciones of archNaciemientos;
+	vectorFallecidos = array 1 to delegaciones of archFallecidos;
 	
+
+procedure abrirVectorNacimientos(var v: vectorNaciemientos);
+var
+	i: integer;
+	nombreFisico: str10;
+
+begin
+	for i:= 1 to delegaciones do begin
+		write('Nombre de archivo de naciemientos de delegacion ',i,': ');
+		readLn(nombreFisico);
+		assign(v[i], nombreFisico);
+		reset(v[i]);
+	end;
+end;
+
+procedure abrirVectorFallecidos(var v: vectorFallecidos);
+var
+	i: integer;
+	
+
+begin
+	for
